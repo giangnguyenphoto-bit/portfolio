@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dự án Bác Ba Phi</title>
+    <style>
+        :root {
+            --primary-color: #c0392b; /* Màu đỏ nổi bật, phù hợp ngành F&B/Voucher */
+            --secondary-color: #2c3e50;
+            --bg-color: #f9f9fa;
+            --text-color: #333;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+        }
+        header { 
+            background-color: var(--primary-color); 
+            color: #fff; 
+            padding: 4rem 1rem; 
+            text-align: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        header p { 
+            margin-top: 1rem; 
+            font-size: 1.2rem; 
+            opacity: 0.9; 
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 3rem auto; 
+            padding: 0 1rem; 
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+            font-size: 2rem;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            display: block;
+            margin: 0.5rem auto 0;
+        }
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 2rem; 
+        }
+        .gallery-item { 
+            background: #fff; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
+            transition: all 0.3s ease; 
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery-item:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+        .image-wrapper {
+            width: 100%;
+            height: 250px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .gallery-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .item-desc { 
+            padding: 1.5rem; 
+            text-align: center; 
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .item-desc h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+        .item-desc p {
+            margin: 0;
+            color: #777;
+            font-size: 0.95rem;
+        }
+        footer { 
+            text-align: center; 
+            padding: 2rem; 
+            background-color: var(--secondary-color); 
+            color: #fff; 
+            margin-top: 4rem; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dự án Bác Ba Phi</h1>
+        <p>Bộ sưu tập các ấn phẩm thiết kế, voucher khuyến mãi và layout nhận diện thương hiệu.</p>
+    </header>
+    
+    <div class="container">
+        <h2 class="section-title">Ấn phẩm & Thiết kế</h2>
+        <div class="gallery">
+            <!-- Cover & Layout -->
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="cover-01.jpg" alt="Cover 01" onerror="this.src='https://via.placeholder.com/400x300?text=cover-01.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Cover Design</h3>
+                    <p>Thiết kế ảnh bìa tổng thể</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="layout-01.jpg" alt="Layout 01" onerror="this.src='https://via.placeholder.com/400x300?text=layout-01.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Bản Layout</h3>
+                    <p>Bố cục tổng quan các hạng mục thiết kế</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="bac ba phi-02.png" alt="Logo/Graphic" onerror="this.src='https://via.placeholder.com/400x300?text=bac+ba+phi-02.png'"></div>
+                <div class="item-desc">
+                    <h3>Graphic Asset</h3>
+                    <p>Hình ảnh đồ họa thương hiệu Bác Ba Phi</p>
+                </div>
+            </div>
+
+            <!-- Vouchers 1TR -->
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="1tr-01.jpg" alt="Voucher 1 Triệu - Mặt trước" onerror="this.src='https://via.placeholder.com/400x300?text=1tr-01.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Voucher 1.000.000đ (Mặt trước)</h3>
+                    <p>Thiết kế mặt trước voucher mệnh giá 1 triệu</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="1tr-02.jpg" alt="Voucher 1 Triệu - Mặt sau" onerror="this.src='https://via.placeholder.com/400x300?text=1tr-02.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Voucher 1.000.000đ (Mặt sau)</h3>
+                    <p>Quy định & điều khoản sử dụng</p>
+                </div>
+            </div>
+
+            <!-- Vouchers 500k -->
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="500-01.jpg" alt="Voucher 500k - Mặt trước" onerror="this.src='https://via.placeholder.com/400x300?text=500-01.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Voucher 500.000đ (Mặt trước)</h3>
+                    <p>Thiết kế mặt trước voucher mệnh giá 500K</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="500-02.jpg" alt="Voucher 500k - Mặt sau" onerror="this.src='https://via.placeholder.com/400x300?text=500-02.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Voucher 500.000đ (Mặt sau)</h3>
+                    <p>Quy định & điều khoản sử dụng</p>
+                </div>
+            </div>
+
+            <!-- Discount Vouchers -->
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="10%25-01.jpg" alt="Voucher 10%" onerror="this.src='https://via.placeholder.com/400x300?text=10%25-01.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Voucher Giảm 10%</h3>
+                    <p>Phiếu ưu đãi chiết khấu 10%</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="image-wrapper"><img src="20%25-01.jpg" alt="Voucher 20%" onerror="this.src='https://via.placeholder.com/400x300?text=20%25-01.jpg'"></div>
+                <div class="item-desc">
+                    <h3>Voucher Giảm 20%</h3>
+                    <p>Phiếu ưu đãi chiết khấu 20%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Portfolio Thiết Kế - Dự án Bác Ba Phi. Generated by Gemini.</p>
+    </footer>
+</body>
+</html>
